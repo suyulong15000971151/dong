@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).on("pagecreate",function(event){
+  $(window).on("orientationchange",function(){
+    alert("方向已改变!");
+  });                     
+});
+</script>
+</head>
+<body>
+
+<div data-role="page">
+  <div data-role="header">
+    <h1>orientationchange 事件</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>翻转设备!</p>
+    <p><b>注意：</b>你必须使用一个移动设备或移动仿真器查看事件运行效果。</p>
+  </div>
+
+  <div data-role="footer">
+    <h1>底部文本</h1>
+  </div>
+</div> 
+
+</body>
+</html>
